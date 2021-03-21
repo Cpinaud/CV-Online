@@ -1,0 +1,57 @@
+$flaticon-font: "flaticon";
+
+@font-face {
+    font-family: $flaticon-font;
+    src: url("./flaticon.ttf?a49de10d4deba8aa3fdf8a191b9d1451") format("truetype"),
+url("./flaticon.woff?a49de10d4deba8aa3fdf8a191b9d1451") format("woff"),
+url("./flaticon.woff2?a49de10d4deba8aa3fdf8a191b9d1451") format("woff2"),
+url("./flaticon.eot?a49de10d4deba8aa3fdf8a191b9d1451#iefix") format("embedded-opentype"),
+url("./flaticon.svg?a49de10d4deba8aa3fdf8a191b9d1451#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon-map: (
+    "contacto": "\f101",
+    "llamada-telefonica": "\f102",
+    "logotipo-de-gmail": "\f103",
+    "logotipo-de-linkedin": "\f104",
+    "media-luna-y-sol": "\f105",
+    "papel-de-datos-personales-de-empresario": "\f106",
+    "signo-de-github": "\f107",
+    "whatsapp": "\f108",
+);
+
+.flaticon-contacto:before {
+    content: map-get($flaticon-map, "contacto");
+}
+.flaticon-llamada-telefonica:before {
+    content: map-get($flaticon-map, "llamada-telefonica");
+}
+.flaticon-logotipo-de-gmail:before {
+    content: map-get($flaticon-map, "logotipo-de-gmail");
+}
+.flaticon-logotipo-de-linkedin:before {
+    content: map-get($flaticon-map, "logotipo-de-linkedin");
+}
+.flaticon-media-luna-y-sol:before {
+    content: map-get($flaticon-map, "media-luna-y-sol");
+}
+.flaticon-papel-de-datos-personales-de-empresario:before {
+    content: map-get($flaticon-map, "papel-de-datos-personales-de-empresario");
+}
+.flaticon-signo-de-github:before {
+    content: map-get($flaticon-map, "signo-de-github");
+}
+.flaticon-whatsapp:before {
+    content: map-get($flaticon-map, "whatsapp");
+}
