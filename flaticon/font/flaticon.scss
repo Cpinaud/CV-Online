@@ -2,11 +2,11 @@ $flaticon-font: "flaticon";
 
 @font-face {
     font-family: $flaticon-font;
-    src: url("./flaticon.ttf?a49de10d4deba8aa3fdf8a191b9d1451") format("truetype"),
-url("./flaticon.woff?a49de10d4deba8aa3fdf8a191b9d1451") format("woff"),
-url("./flaticon.woff2?a49de10d4deba8aa3fdf8a191b9d1451") format("woff2"),
-url("./flaticon.eot?a49de10d4deba8aa3fdf8a191b9d1451#iefix") format("embedded-opentype"),
-url("./flaticon.svg?a49de10d4deba8aa3fdf8a191b9d1451#flaticon") format("svg");
+    src: url("./flaticon.ttf?88226319b66fbc9e2d1f3c0838575944") format("truetype"),
+url("./flaticon.woff?88226319b66fbc9e2d1f3c0838575944") format("woff"),
+url("./flaticon.woff2?88226319b66fbc9e2d1f3c0838575944") format("woff2"),
+url("./flaticon.eot?88226319b66fbc9e2d1f3c0838575944#iefix") format("embedded-opentype"),
+url("./flaticon.svg?88226319b66fbc9e2d1f3c0838575944#flaticon") format("svg");
 }
 
 i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
@@ -21,16 +21,19 @@ i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
 }
 
 $flaticon-map: (
-    "contacto": "\f101",
-    "llamada-telefonica": "\f102",
-    "logotipo-de-gmail": "\f103",
-    "logotipo-de-linkedin": "\f104",
-    "media-luna-y-sol": "\f105",
+    "bombilla-apagada": "\f101",
+    "contacto": "\f102",
+    "llamada-telefonica": "\f103",
+    "logotipo-de-gmail": "\f104",
+    "logotipo-de-linkedin": "\f105",
     "papel-de-datos-personales-de-empresario": "\f106",
     "signo-de-github": "\f107",
     "whatsapp": "\f108",
 );
 
+.flaticon-bombilla-apagada:before {
+    content: map-get($flaticon-map, "bombilla-apagada");
+}
 .flaticon-contacto:before {
     content: map-get($flaticon-map, "contacto");
 }
@@ -42,9 +45,6 @@ $flaticon-map: (
 }
 .flaticon-logotipo-de-linkedin:before {
     content: map-get($flaticon-map, "logotipo-de-linkedin");
-}
-.flaticon-media-luna-y-sol:before {
-    content: map-get($flaticon-map, "media-luna-y-sol");
 }
 .flaticon-papel-de-datos-personales-de-empresario:before {
     content: map-get($flaticon-map, "papel-de-datos-personales-de-empresario");

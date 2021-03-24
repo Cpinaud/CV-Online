@@ -1,10 +1,10 @@
 @font-face {
     font-family: "flaticon";
-    src: url("./flaticon.ttf?a49de10d4deba8aa3fdf8a191b9d1451") format("truetype"),
-url("./flaticon.woff?a49de10d4deba8aa3fdf8a191b9d1451") format("woff"),
-url("./flaticon.woff2?a49de10d4deba8aa3fdf8a191b9d1451") format("woff2"),
-url("./flaticon.eot?a49de10d4deba8aa3fdf8a191b9d1451#iefix") format("embedded-opentype"),
-url("./flaticon.svg?a49de10d4deba8aa3fdf8a191b9d1451#flaticon") format("svg");
+    src: url("./flaticon.ttf?88226319b66fbc9e2d1f3c0838575944") format("truetype"),
+url("./flaticon.woff?88226319b66fbc9e2d1f3c0838575944") format("woff"),
+url("./flaticon.woff2?88226319b66fbc9e2d1f3c0838575944") format("woff2"),
+url("./flaticon.eot?88226319b66fbc9e2d1f3c0838575944#iefix") format("embedded-opentype"),
+url("./flaticon.svg?88226319b66fbc9e2d1f3c0838575944#flaticon") format("svg");
 }
 
 i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
@@ -18,19 +18,19 @@ i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
     -moz-osx-font-smoothing: grayscale;
 }
 
-.flaticon-contacto:before {
+.flaticon-bombilla-apagada:before {
     content: "\f101";
 }
-.flaticon-llamada-telefonica:before {
+.flaticon-contacto:before {
     content: "\f102";
 }
-.flaticon-logotipo-de-gmail:before {
+.flaticon-llamada-telefonica:before {
     content: "\f103";
 }
-.flaticon-logotipo-de-linkedin:before {
+.flaticon-logotipo-de-gmail:before {
     content: "\f104";
 }
-.flaticon-media-luna-y-sol:before {
+.flaticon-logotipo-de-linkedin:before {
     content: "\f105";
 }
 .flaticon-papel-de-datos-personales-de-empresario:before {

@@ -1,141 +1,267 @@
-body{
-    font-family: 'Share Tech Mono', monospace;
-}
-.oscuro{ 
-    background-color: #1f1f1f; 
-    color: #f1eded; 
+body {
+  font-family: "Share Tech Mono", monospace;
 }
 
-a{
-    text-decoration: none;
+a, button {
+  text-decoration: none;
+  padding: .30rem !important;
 }
-h1{
-    font-weight: bold;
-    font-size: 60px;
-    letter-spacing: 5px;
-    font-family: 'Syne Mono', monospace;
+h1 {
+  font-weight: bold;
+  font-size: 60px;
+  letter-spacing: 5px;
+  font-family: "Syne Mono", monospace;
+}
+
+.header-top{
+  display: flex;
+  justify-content: space-between;
+  height: 30px;
+}
+
+.dark-mode {
+  display: flex;
+  align-items: flex-start;
+  margin: 0;
+  padding: 0;
+  z-index: 1000;
 }
 
 
-.header{
-    justify-content: space-between;
-    padding-top: 0.5rem;
+
+.dropdown-toggle::after{
+  content:none;
+}
+
+
+
+.header {
+  display: flex;
+  justify-content: center;
+  
+}
+
+
+.menu-contacto {
+  top: 0;
+  min-width: 0;
+  padding: 0;
+  border: none;
+}
+
+.btn:focus {
+  box-shadow: none !important;
+}
+
+.nombre {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.perfil1 {
+  display: flex;
+  justify-content: center;
+}
+
+.nombre p {
+  padding-right: 1rem;
+}
+.encabezado {
+  display: flex;
+  flex-direction: row;
+}
+
+.perfil {
+  width: 300px;
+  height: 300px;
+  border-radius: 150px;
+  box-shadow: 5px 5px 5px black;
+}
+.perfil:hover {
+  cursor: pointer;
+  box-shadow: 8px 8px 8px black;
+  border: solid 0.5px black;
+}
+
+
+.icono {
+  color: black;
+  font-size: 1.2rem;
+  border: none;
+  box-shadow: none;
+  padding: .25rem;
+}
+
+.giro:hover{
+    transform:rotate(360deg);
+    transition: 1s
+}
+.grande:hover{
+    transform:scale(1.2);
+    transition: 0.8s
+}
+
+.cuerpo {
+  padding: 5rem;
+  margin: 0;
+}
+.habilidades {
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+.habilidades button {
+  color: black !important;
+  background-color: white !important;
+  border: none !important;
+  box-shadow: 0 0 0 0;
+  font-weight: bold;
+  justify-content: center;
+  font-size: 1.5rem;
+}
+
+.accordion button:focus {
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.description {
+  font-size: 13px;
 }
 .enlaces{
-    width: 10px;
+  display: flex;
+  flex-direction: column;
+
 }
 
-.menu-contacto{
-    top:0;
-    min-width: 0;
-    padding:0;
-    border:none;
+/****************DarkMode**********************/
+
+.oscuro {
+  background-color: #1f1f1f;
+  color: white;
 }
 
-.btn:focus{
-    box-shadow:none !important;
+.lamp {
+    color:white;
+}
+.oscurillo {
+  color: white !important;
+  background-color: #1f1f1f;
+}
+
+.oscurillo1 {
+  box-shadow: 3px 3px 7px white !important;
+}
+.oscurillo1:hover {
+  cursor: pointer;
+  box-shadow: 5px 5px 8px white !important;
+  border: solid 2px white;
+}
+
+.black {
+  background-color: #1f1f1f !important;
+}
+
+/****************RESPONSIVE TABLET**************/
+@media screen and (max-device-width: 768px) {
+h1{
+  font-size: 40px;
+
+}
+
+h2{
+  font-size: 20px;
+ 
+}
+
+h4{
+  font-size: 20px;
+  font-weight: bold;
+}
+
+ 
+  .perfil{
+      width: 200px;
+      height: 200px;
+  }
+
+  .perfil1{
+    height: max-content;
+  }
+
+  .enlaces{
+    display: flex;
+    flex-direction: row-reverse;
+    position: fixed;
+  }
+
+  .menu-contacto{
+    flex-direction: column;
+  }
+
+  .cuerpo{
+    padding: 20px;
+  }
+
+ .cuerpo p{
+   font-size: 80%;
+ }
+
+ .habilidades button{
+   font-size: 90%;
+ }
+
+/****************RESPONSIVE MOBILE**************/
+@media screen and (max-device-width: 480px) {
+
+  h1{
+    font-size: 32px;
+  }
+
+  h4{
+    font-size: 80%;
+  }
+.perfil1{
+  width: 100%;
 }
 
 .nombre{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+  align-items: center;
+  padding-top: .5rem;
+  padding-right: 0;
+  width: 100%;
+  text-align: center;
 }
 
-.perfil1{
-    display: flex;
-    justify-content: center;
+.description p{
+  display: none;
 }
 
-.nombre p{
-    padding-right:1rem;
-}
-.uno{
-    display: flex;
-    flex-direction: row;
-    
-}
-
-.uno i:hover{
-    cursor:pointer;
-}
-.perfil{
-    width: 300px;
-    height: 300px;
-    border-radius: 150px;
-    box-shadow: 5px 5px 5px black;
-}
-.perfil:hover{
-    cursor:pointer;
-    box-shadow: 8px 8px 8px black;
-    border:solid 0.5px black;
-}
 .icono{
-    color:black;
-    font-size: 1.5rem;
-}
-.oscurillo{ 
-    color: #f1eded !important; 
-    background-color: #1f1f1f;
+  font-size: 1rem;
 }
 
-.oscurillo1{
-    box-shadow: 3px 3px 7px white !important;
-
-}
-.oscurillo1:hover{
-    cursor:pointer;
-    box-shadow: 5px 5px 8px white !important;
-    border:solid 2px white;
-}
-
-.dark-mode{
-    display: flex;
-    justify-content: flex-end;
-    margin: 0;
-    padding:0;
-}
-
-.black{
-    background-color: #1f1f1f !important;
-
+.header{
+  flex-direction: column;
+  align-content: center;
+  width: 100%;
 }
 
 .cuerpo{
-padding: 5rem;
-margin: 0;
+  flex-direction: column;
+  align-items: center;
+}
 
+.estudios, .experiencia{
+  width: 100%;
+  text-align: justify;
 }
 
 .habilidades{
-    display: flex;
-    justify-content: center;
-    justify-content: space-around;
-    flex-direction: row;
-    
+  flex-direction: column;
 }
 
-
-
-
-
-.habilidades button{
-    color: black !important;
-    background-color: white !important;
-    border:none !important;
-    box-shadow: 0 0 0 0;
-    font-weight: bold;
-    justify-content: center;
-    font-size: 1.5rem;
-}
-
-
-
-.accordion button:focus{
-    border: none !important;
-    box-shadow:none !important;
-}
-
-.description{
-    font-size: 13px;
 }

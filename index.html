@@ -2,69 +2,74 @@
 <html lang="es">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous" />
   <title>Cintia Pinaud</title>
-  <link rel="stylesheet" type="text/css" href="flaticon/font/flaticon.css">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="flaticon/font/flaticon.css" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap" rel="stylesheet" />
   <script src="js/script.js" language="javascript" type="text/javascript"></script>
 </head>
 
 <body>
-  <section class="dark-mode">
-    <button type="button" class="btn" onclick="cambiarModo()"><i id="icono"
-        class="flaticon-media-luna-y-sol icono"></i></button>
-  </section>
-  <section class="header row">
-    <section class="enlaces col-1">
-      <ul class="nav justify-content-flex-start">
+  <section class="header-top">
+    <section>
+      <ul class="nav justify-content-flex-start enlaces">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" target="blank"
+          <a class="nav-link active grande" aria-current="page" target="blank"
             href="https://www.linkedin.com/in/cintia-pinaud-5a362315b/"><i id="icono1"
               class="flaticon-logotipo-de-linkedin icono"></i></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" target="blank" href="https://github.com/Cpinaud"><i id="icono2"
+          <a class="nav-link grande" target="blank" href="https://github.com/Cpinaud"><i id="icono2"
               class="flaticon-signo-de-github icono"></i></a>
         </li>
         <li class="nav-item">
-          <div class="btn-group dropend">
-            <button type="button" class="btn dropdown" data-bs-toggle="dropdown" aria-expanded="false">
+          <div class="dropdown">
+            <button type="button" class="btn dropdown-toggle grande" data-bs-toggle="dropdown" id="dropdownMenuButton1" aria-expanded="false">
               <i id="icono3" class="flaticon-contacto icono"></i>
             </button>
-            <ul id="menu-contacto" class="dropdown-menu menu-contacto">
+            <ul id="menu-contacto" class="dropdown-menu menu-contacto" aria-labelledby="dropdownMenuButton1">
               <li>
-                <a href="mailto:cintiapinaud@gmail.com" target="blank"><i id="icono4"
+                <a href="mailto:cintiapinaud@gmail.com" target="blank" class="grande dropdown-item"><i id="icono4"
                     class="flaticon-logotipo-de-gmail icono"></i></a>
               </li>
               <li>
-                <a href="tel:+541135080634"><i id="icono5" class="flaticon-llamada-telefonica icono"></i></a>
+                <a href="tel:+541135080634" class="grande dropdown-item"><i id="icono5"
+                    class="flaticon-llamada-telefonica icono"></i></a>
               </li>
               <li>
-                <a href="https://wa.link/d2737y" target="blank"><i id="icono6" class="flaticon-whatsapp icono"></i></a>
+                <a href="https://wa.link/d2737y" target="blank" class="grande dropdown-item"><i id="icono6"
+                    class="flaticon-whatsapp icono"></i></a>
               </li>
             </ul>
           </div>
         </li>
       </ul>
     </section>
+    <section class="dark-mode">
+      <button type="button" class="btn giro" onclick="darkMode()">
+        <i id="icono" class="flaticon-bombilla-apagada icono"></i>
+      </button>
+    </section>
+  </section>
+  <section class="header row">
     <section class="perfil1 col-4">
-      <div>
-        <img id="perfil" class="perfil" src="img/perfilNormal.jpg" onclick="changeImage()">
+      <div class="foto">
+        <img id="perfil" class="perfil" src="img/perfilNormal.jpg" onclick="changeImage()" />
       </div>
     </section>
     <section class="nombre col-7">
       <div>
-        <div class="uno">
+        <div class="encabezado">
           <h1>CINTIA PINAUD</h1>
-          <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          <button type="button" class="btn grande" data-bs-toggle="modal" data-bs-target="#exampleModal">
             <i id="icono7" title="Datos personales" class="flaticon-papel-de-datos-personales-de-empresario icono"></i>
           </button>
           <!-- Modal -->
@@ -73,7 +78,9 @@
             <div class="modal-dialog">
               <div class="modal-content" id="modales">
                 <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">Datos personales</h5>
+                  <h5 class="modal-title" id="exampleModalLabel">
+                    Datos personales
+                  </h5>
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
@@ -88,50 +95,61 @@
           </div>
         </div>
         <h4>Front-end Developer</h4>
-        <p class="description">
-          Este currículum online fue desarrollado para que puedan conocer mi información principal. El mismo cuenta con algunos puntos interactivos
-          a fin de poder mostrar algunas de mis habilidades al momento de desarrollar una página web.<br>
-          Me considero una persona sumamente responsable, de rápido aprendizaje y con muchísimas ganas de comenzar a trabajar en el área de desarrollo. <br> 
-          En caso de querer contactarme, cuentan con un pequeño navegador a la izquierda con enlaces directos a todos mis canales de contacto.
+      </div>
+      <div class="description">
+        <p>
+          Este currículum online fue desarrollado para que puedan conocer mi
+          información principal. El mismo cuenta con algunos puntos
+          interactivos a fin de poder mostrar algunas de mis habilidades al
+          momento de desarrollar una página web.<br />
+          Me considero una persona sumamente responsable, de rápido
+          aprendizaje y con muchísimas ganas de comenzar a trabajar en el área
+          de desarrollo. <br />
+          En caso de querer contactarme, cuentan con un pequeño navegador a la
+          izquierda con enlaces directos a todos mis canales de contacto.
         </p>
       </div>
     </section>
   </section>
   <section class="cuerpo row">
     <section class="estudios col-6">
-      <h2><b>Educación Formal</b></h2><br>
-      <p>TECNICATURA EN DESARROLLO WEB<br>
-        Universidad Nacional de La Matanza | 2019 - Actualidad<br>
-        Materias aprobadas: 9/20 | Promedio: 8<br><br><br>
-        INGENIERÍA INFORMÁTICA<br>
-        Universidad Nacional de La Matanza | 2015 - 2019<br>
-        Materias aprobadas: 11/54 | Promedio: 7,50<br><br><br>
-        SECUNDARIO<br>
-        ESS N°2 "Congreso de Tucumán" | 2012<br>
-        Promedio: 7,94
+      <h2><b>Educación Formal</b></h2>
+      <br />
+      <p>
+        TECNICATURA EN DESARROLLO WEB<br />
+        Universidad Nacional de La Matanza | 2019 - Actualidad<br />
+        Materias aprobadas: 9/20 | Promedio: 8<br /><br /><br />
+        INGENIERÍA INFORMÁTICA<br />
+        Universidad Nacional de La Matanza | 2015 - 2019<br />
+        Materias aprobadas: 11/54 | Promedio: 7,50<br /><br /><br />
       </p>
     </section>
     <section class="experiencia col-6">
-      <h2><b>Experiencia Laboral</b></h2><br>
-      <p>ASESORA<br>
-        Atento Argentina | Mayo 2015 - Actualidad<br>
-        Telemarketer en atención al cliente (Renault Protección)<br>
-        Back Office (Renault Protección)<br>
-        Telemarketer en ventas y retención de clientes (Movistar)<br><br><br>
-        ASESORA<br>
-        Marcodina SA| Junio 2013 - Febrero 2015<br>
-        Telemarketer en ventas (Emerphone)<br>
+      <h2><b>Experiencia Laboral</b></h2>
+      <br />
+      <p>
+        ASESORA<br />
+        Atento Argentina | Mayo 2015 - Actualidad<br />
+        Telemarketer en atención al cliente (Renault Protección)<br />
+        Back Office (Renault Protección)<br />
+        Telemarketer en ventas y retención de clientes (Movistar)<br /><br /><br />
+        ASESORA<br />
+        Marcodina SA| Junio 2013 - Febrero 2015<br />
+        Telemarketer en ventas (Emerphone)<br />
       </p>
     </section>
+    <hr>
     <section class="habilidades">
       <div class="accordion" id="accordionFlushExample">
         <div class="accordion-item">
           <h2 class="accordion-header" id="flush-headingOne">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+            <button class="accordion-button collapsed grande" type="button" data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
               Inglés
             </button>
           </h2>
-          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+            data-bs-parent="#accordionFlushExample">
             <div class="accordion-body">
               <ul>
                 <li>Lectura: Intermedio</li>
@@ -142,27 +160,29 @@
           </div>
         </div>
       </div>
-        <div class="accordion" id="accordionFlushExample">
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="flush-headingTwo">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseOne">
-                Skills
-              </button>
-            </h2>
-            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-              <div class="accordion-body">
-                <ul>
-                  <li>HTML: Avanzado</li>
-                  <li>CSS: Intermedio</li>
-                  <li>JS: Básico</li>
-                  <li>Bootstrap: Intermedio</li>
-                  <li>GIT: Básico</li>
-                  <li>SQL: Básico</li>
-                </ul>
-              </div>
+      <div class="accordion" id="accordionFlushExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingTwo">
+            <button class="accordion-button collapsed grande" type="button" data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseOne">
+              Skills
+            </button>
+          </h2>
+          <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+            data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              <ul>
+                <li>HTML: Avanzado</li>
+                <li>CSS: Intermedio</li>
+                <li>JS: Básico</li>
+                <li>Bootstrap: Intermedio</li>
+                <li>GIT: Básico</li>
+                <li>SQL: Básico</li>
+              </ul>
             </div>
           </div>
         </div>
+      </div>
     </section>
   </section>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"
