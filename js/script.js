@@ -9,11 +9,11 @@ function changeImage() {
 }
 
 
-      function cambiarModo() { 
+      function darkMode() { 
         var cuerpoweb = document.body; 
         cuerpoweb.classList.toggle("oscuro"); 
         var modoOscuro = document.getElementById("icono");
-        modoOscuro.classList.toggle("oscurillo");
+        modoOscuro.classList.toggle("lamp");
         var modoOscuro1 = document.getElementById("icono1");
         modoOscuro1.classList.toggle("oscurillo");
         var modoOscuro2 = document.getElementById("icono2");
@@ -28,10 +28,14 @@ function changeImage() {
         modoOscuro6.classList.toggle("oscurillo");
         var modoOscuro7 = document.getElementById("icono7");
         modoOscuro7.classList.toggle("oscurillo");
+        modoOscuro7.classList.toggle("oscurillo2");
         var modoOscuro8 = document.getElementById("menu-contacto");
         modoOscuro8.classList.toggle("oscurillo");
         var modoOscuro9 = document.getElementById("perfil");
         modoOscuro9.classList.toggle("oscurillo1");
         var modoOscuro0 = document.getElementById("modales");
         modoOscuro0.classList.toggle("black");
+        var modoOscuro01 = document.getElementById("boton-colapsado");
+        modoOscuro01.classList.toggle("oscuro");
+        
       } 
